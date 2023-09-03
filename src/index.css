@@ -1,0 +1,166 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: black; */
+
+  /* font-synthesis: none; */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; */
+}
+
+.main-header {
+  display:flex;
+  justify-content: space-around;
+}
+
+.picon img {
+  width: 100px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.app-name {
+   font-size:x-large;
+   text-transform:capitalize;
+   color:tomato;
+}
+
+.links {
+  margin: 2.5rem 0 0 0;
+  text-transform: capitalize;
+}
+
+.people-section {
+  display: flex;
+  justify-content: space-evenly;
+  border: solid 1px transparent;
+  margin-top: 10%;
+}
+
+.quote {
+  font-style: oblique;
+  font-size: x-large;
+  font-weight: 500;
+  width: 800px;
+  height: 450px;
+}
+
+.download-section {
+  margin: 0 0 0 -1rem;
+}
+
+.download-section a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color:white;
+  background-color:tomato;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.icon {
+  color:rgb(48, 40, 40);
+  font-size: xx-large;
+  text-shadow: 2px 2px 10px white;
+}
+
+.imgs img {
+  width: 1000px;
+  height: 650px;
+  border-radius: 20px;
+}
+
+.button-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10% 0 0 0;
+}
+
+button {
+  font-size: 50px;
+  border:none;
+}
+
+button:hover{
+  color: tomato;
+  transition: 1s;
+}
+
+
+.small-img img {
+  width: 250px;
+  height: 250px;
+  box-shadow: 2px 2px 20px tomato;
+}
+
+
+/* media querry */
+
+@media screen   and (min-width:500px)  and (max-width:1024px) {
+
+.people-section {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  border: solid 1px transparent;
+  margin-top: 10%;
+}
+
+  .imgs img {
+  width: 100%;
+  height: 650px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 0  auto;
+}
+.quote {
+  margin: 0 0 0 0;
+}
+}
+
+@media screen and (max-width:768px) {
+.imgs img {
+  width: 100%;
+  height: 650px;
+  border-radius: 20px;
+  text-align: center;
+}
+}
+
+@media screen and (max-width:480px) {
+
+  .app-name {
+   font-size:medium;
+   text-transform:capitalize;
+   color:tomato;
+}
+
+.people-section {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  border: solid 1px transparent;
+  margin-top: 10%;
+}
+
+.imgs img {
+  width: 100%;
+  height: 650px;
+  height: 500px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.quote {
+  width: 100%;
+   font-size: medium;
+}
+}
